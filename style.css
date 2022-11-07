@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.12rem;
+}
+
+/******* Header Styles ********/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: hsl(229, 31%, 21%);
+}
+
+.nav-items li a{
+    margin: 0 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-items li a:hover{
+    color: hsl(0, 94%, 66%);
+}
+
+.login-btn{
+    background-color: hsl(0, 94%, 66%);
+    color: hsl(0, 0%, 100%);
+    margin-left: 1rem;
+    padding: 0.4rem 1.5rem;
+    border-radius: 3px;
+    transition: 0.3s;
+    box-shadow: 0px 3px  3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.login-btn:hover{
+    border: 2px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+/*********** Hero Section **********/
+
+.hero-section{
+    display: flex;
+    padding: 6rem 7rem;
+    gap: 2rem;
+}
+
+.text-container{
+    margin-top: 5rem;
+}
+
+.text-container h1{
+    font-size: 2.5rem;
+    color: hsl(229, 31%, 21%);
+}
+
+.text-container p{
+    color: hsl(229, 8%, 60%);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.buttons{
+    margin-top: 2rem;
+}
+
+.chrome-btn{
+    background-color:hsl(231, 69%, 60%);
+    padding: 0.7rem 1rem;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.chrome-btn:hover{
+    background-color: hsl(0, 0%, 100%);
+    border: 2px solid hsl(231, 69%, 60%);
+    color: hsl(231, 69%, 60%);
+}
+
+.fox-btn{
+    padding: 0.7rem 1rem;
+    color: hsl(229, 31%, 21%);
+    border: none;
+    border-radius: 3px;
+    margin-left: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.fox-btn:hover{
+    border: 2px solid hsl(229, 31%, 21%);
+    background-color: transparent;
+}
+
+.hero{
+    margin-top: -4rem;
+    margin-right: -4rem;
+    object-fit: cover;
+    height: 115%;
+}
+
+
+/********* Features Section ********/
+
+.features{
+    text-align: center;
+    color: hsl(229, 31%, 21%);
+    padding: 2rem 0;
+}
+
+.features h2{
+    font-size: 2.5rem;
+    color: hsl(229, 31%, 21%);
+}
+
+.features p{
+    color: hsl(229, 8%, 60%);
+    margin: auto;
+    width: 40%;
+    padding-top: 1.2rem;
+    line-height: 1.5;
+}
+
+.feature-tabs{
+    margin-top: 4rem;
+}
+
+.feature-tabs a {
+    margin: 0 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: hsl(229, 31%, 21%);
+    position: relative;
+    cursor: pointer;
+}
+  
+.feature-tabs a:hover {
+    color: hsl(0, 94%, 66%);
+}
+  
+.feature-tabs a::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: -50px;
+    height: 1px;
+    width: 220%;
+    background-color: hsl(229, 8%, 60%);
+}
+
+.current::after {
+    content: '';
+    position: absolute;
+    top: 38px;
+    left: 40px;
+    height: 3px;
+    width: 0;
+    background: var(--soft-red);
+    animation: red-line 250ms ease-in-out forwards;
+}
+
+.picture-section{
+    display: flex;
+    gap: 10rem;
+    padding: 5rem 7rem;
+}
+
+.text-section{
+    margin-top: 4.5rem;
+}
+
+.text-section h3{
+    font-size: 2.2rem;
+    color: hsl(229, 31%, 21%);
+}
+
+.text-section p{
+    width: 100%;
+    color: hsl(229, 8%, 60%);
+    font-size: 1.02rem;
+    line-height: 1.4;
+    margin-top: 2rem;
+}
+
+.info-btn{
+    margin-top: 2rem;
+    padding: 0.8rem 1rem;
+    background-color: hsl(231, 69%, 60%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.info-btn:hover{
+    background: transparent;
+    color: hsl(231, 69%, 60%);
+    border: 1px solid hsl(231, 69%, 60%);
+}
+
+
+/******* Browser- Section ********/
+
+.browser-details{
+    padding: 3rem;
+    text-align: center;
+}
+
+.browser-text h3{
+    color: hsl(229, 31%, 21%);
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.browser-text p{
+    margin: auto;
+    text-align: center;
+    width: 45%;
+    line-height: 1.5;
+    color: hsl(229, 8%, 60%);
+}
+
+.browser-box{
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    margin: auto;
+    gap:2rem
+}
+
+.card{
+    padding: 2rem;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    color: hsl(229, 31%, 21%);
+    text-align: center;
+    height: 40%;
+}
+
+.card h4{
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.card p{
+    font-size: 0.9rem;
+    color: hsl(229, 8%, 60%);
+    margin-top: 0.7rem;
+}
+
+.card:nth-child(2){
+    margin-top: 3rem;
+}
+.card:nth-child(3){
+    margin-top: 6rem;
+}
+
+.dot{
+    width: 125%;
+    margin-left: -1.5rem;
+}
+
+.browser-btn{
+    background-color: hsl(231, 69%, 60%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    margin-top: 1rem;
+    border: none;
+    width: 120%;
+    margin-left: -1rem;
+    padding: 0.9rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.browser-btn:hover{
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(231, 69%, 60%);
+    color: hsl(231, 69%, 60%);
+}
+
+/********* Questions **********/
+
+.faq {
+    text-align: center;
+    padding: 5rem;
+}
+
+.faq-info h2 {
+    color: hsl(229, 31%, 21%);
+}
+
+.faq-info p{
+    color: hsl(229, 8%, 60%);
+    width: 45%;
+    line-height: 1.5;
+    margin:2rem auto;
+}
+
+.faq-questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-questions ul {
+    width: 40%;
+}
+
+.faq-questions ul li {
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.faq-questions ul li a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+    text-decoration: none;
+}
+
+.faq-questions ul li a:hover{
+    color: hsl(0, 94%, 66%);
+}
+
+
+.faq-questions ul li a img {
+    width: 80%;
+}
+
+.faq-questions ul li::before {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background:#333;
+    opacity: .4;
+    position: absolute;
+}
+  
+.faq-questions ul li:nth-child(4)::after {
+    content: "";
+    top: 50px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #333;
+    opacity: .4;
+    position: absolute;
+}
+
+
+/*********** Info Section **********/
+
+.info-container{
+    padding: 3rem;
+    background-color: hsl(231, 69%, 60%);
+}
+
+.info-section{
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.info-section h4{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+}
+
+.info-section h3{
+    width: 30%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 2.2rem auto 0 auto;
+}
+
+.form{
+    margin-top:1.2rem ;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.form input{
+    padding: 0.5rem;
+    width: 20%;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.sub-btn{
+    padding: 0.7rem;
+    background-color: hsl(0, 94%, 66%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sub-btn:hover{
+    background: hsl(0, 0%, 100%);
+    color: hsl(0, 94%, 66%);
+}
+
+/********** Footer **************/
+
+footer{
+    background-color: hsl(229, 31%, 21%);
+}
+
+.footer-menu{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    justify-content: center;
+    cursor: pointer;
+}
+
+.details{
+    display: flex;
+    margin-left: 4rem;
+    text-transform: uppercase;
+}
+
+.details p{
+   margin-left: 2rem; 
+}
+
+.details p:hover{
+    color: hsl(0, 94%, 66%);
+}
+
+.social-media {
+    margin-left: 22rem;
+}
+
+.social-media img{
+    margin: 1rem;
+}
+
+.social-media img:hover{
+    transform: scale(1.2);
+}
+
+
+@media only screen and (max-width: 1023px){
+    body{
+        overflow: hidden;
+    }
+    
+    header{
+        padding: 2rem;
+    }
+
+    .hamburger{
+        display: none;
+    }
+    
+    .hero-section{
+        padding: 2rem;
+    }
+
+    .text-container{
+        gap: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .text-container h1{
+        font-size: 2rem;
+    }
+
+    .hero{
+        height: 100%;
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .features h2{
+        margin-top: 2rem;
+    }
+
+    .features p{
+        width: 50%;
+    }
+
+    .picture-section{
+        gap: 2rem;
+        padding: 3rem;
+    }
+
+    .picture-section img{
+        height: 60%;
+        width: 55%;
+    }
+
+    .text-section h3{
+        font-size: 1.75rem;
+        margin-top: -4rem;
+    }
+
+    .text-section p{
+        font-size: 1rem;
+    }
+
+    .browser-box{
+        width: 90%;
+    }
+
+    .faq-info h2{
+        font-size: 2.2rem;
+    }
+
+    .faq-info p{
+        width: 70%;
+        font-size: 1.2rem;
+    }
+    
+    .faq-questions ul {
+        width: 60%;
+    }
+
+    .faq-questions ul li a{
+        font-size: 1.1rem;
+    }
+
+    .info-section h4{
+        font-size: 1rem;
+    }
+
+    .info-section h3{
+        width: 100%;
+    }
+
+    .form input{
+        width: 40%;
+    }
+
+    .social-media {
+        margin-left: 3rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 767px){
+    .nav-items{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger img{
+        width: 140%;
+    }
+
+    .hero-section{
+        padding: 1rem;
+        flex-direction: column-reverse;
+    }
+
+    .text-container h1{
+        text-align: center;
+        margin-top: -5rem;
+    }
+
+    .text-container p{
+        text-align: center;
+    }
+
+    .buttons{
+        text-align: center;
+    }
+
+    .hero{
+        margin: 0;
+    }
+
+    .features p{
+        width: 85%;
+    }
+
+    .feature-tabs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature-tabs a{
+        margin: 0.7rem 0 1rem 0;
+    }
+
+    .feature-tabs a::before{
+        top: 27px;
+        left: 40px;
+        width: 75%;
+    }
+
+    .picture-section{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .picture-section img{
+        margin: auto;
+        width: 100%;
+    }
+
+    .browser-details h3{
+        width: 100%;
+        font-size: 1.7rem;
+    }
+
+    .browser-text p{
+        width: 100%;
+    }
+
+    .browser-box{
+        flex-direction: column;
+        gap:0;
+        width: 80%;
+    }
+
+    .browser-btn{
+        width: 100%;
+        margin-left: 0.2rem;
+    }
+
+    .dot{
+        width: 100%;
+        margin-left: 0.3rem;
+    }
+
+    .card:nth-child(3){
+        margin-top: 3rem;
+    }
+
+    .card h4{
+        font-size: 1.5rem;
+    }
+
+    .card p{
+        font-size: 1rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .faq-info h2{
+        width: 100%;
+        font-size: 1.9rem;
+    }
+
+    .faq-info p{
+        width: 100%;
+        font-size: 0.95rem;
+    }
+
+    .faq-questions ul{
+        width: 250%;
+    }
+
+    .faq-questions ul li a{
+        font-size: 0.85rem;
+    }
+
+    .form{
+        flex-direction: column;
+    }
+
+    .form input{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .sub-btn{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .footer-logo{
+        margin-top: 1.5rem;
+        margin-left: 2rem;
+    }
+
+    .footer-menu{
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .details{
+        text-transform: uppercase;
+        text-align: center;
+        flex-direction: column;
+        margin-left: 5rem;
+        margin: 1.5rem 0;
+    }
+
+    .details p{
+        margin-top: 1.2rem;
+    }
+}
